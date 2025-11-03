@@ -27,7 +27,7 @@ export const assessmentSchema = z.object({
 
   // CRUD & Database
   canBuildCrud: z.boolean(),
-  crudFrameworks: z.array(z.string()).default([]),
+  crudFrameworks: z.array(z.string()),
 
   // Authentication
   canImplementAuth: z.boolean(),
@@ -35,7 +35,7 @@ export const assessmentSchema = z.object({
 
   // Backend Frameworks
   knowsBackendFramework: z.boolean(),
-  backendFrameworks: z.array(z.string()).default([]),
+  backendFrameworks: z.array(z.string()),
   canBuildAuthApi: z.boolean(),
   canDocumentApi: z.boolean(),
 
